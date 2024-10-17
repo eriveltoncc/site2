@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CloudVantage - Soluções em Servidores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero-section {
+            background: url('meu-projeto/imagens/Azul.avif') no-repeat center center; /* Imagem de fundo localizada na pasta 'imagens' */
+            background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+        .hero-section h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        .solutions-section {
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .solution-img {
+            max-width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">CloudVantage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#solutions">Soluções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#support">Suporte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1 class="display-4">CloudVantage</h1>
+        <h1>Soluções em Servidores de Alto Desempenho</h1>
+        <p>Servidores Dedicados, Cloud e Backup em Nuvem para seu Negócio</p>
+        <a href="#solutions" class="btn btn-primary btn-lg">Conheça Nossas Soluções</a>
+    </div>
+</section>
+
+<!-- Solutions Section -->
+<section id="solutions" class="solutions-section text-center">
+    <div class="container">
+        <h2>Nossas Soluções</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="meu-projeto/imagens/servidor-dedicado.jpeg" alt="Servidores Dedicados" class="solution-img"> <!-- Imagem para a solução -->
+                <h4>Servidores Dedicados</h4>
+                <p>Equipamentos escaláveis e com alta densidade de recursos, ideais para exigentes necessidades de performance e baixa latência.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="meu-projeto/imagens/servidor-nuvem.jpg" alt="Servidores em Nuvem" class="solution-img"> <!-- Imagem para a solução -->
+                <h4>Servidores Virtuais</h4>
+                <p>Comumente chamados de Cloud Servers. Opção de baixo custo, para demandas com menor quantidade de recursos e menor complexidade.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="meu-projeto/imagens/backup-nuvem.jpeg" alt="Backup em Nuvem" class="solution-img"> <!-- Imagem para a solução -->
+                <h4>Colocation Gerenciado</h4>
+                <p>Contrate o espaço ideal para a instalação de seus equipamentos no data center da EVEO, com contingência, segurança e apoio técnico local.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="meu-projeto/imagens/Nuvem Privada.jpg" alt="Nuvem Privada" class="solution-img"> <!-- Imagem para a solução -->
+                <h4>Nuvem Privada</h4>
+                <p>Nuvem personalizada, montada exclusivamente e sob demanda, atendendo os mais diversos pré-requisitos e limitações de budget.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+    .solution-img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+        max-width: 200px; /* Define o tamanho máximo da largura da imagem */
+        height: 150px; /* Mantém a proporção da imagem */
+        margin: 0 auto; /* Centraliza as imagens */
+    }
+
+    @media (max-width: 768px) {
+        .solution-img {
+            max-width: 150px; /* Para telas menores, reduz a largura máxima */
+        }
+    }
+</style>
+
+<!-- Support Section -->
+<section id="support" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Suporte ao Cliente</h2>
+        <p class="text-center">Estamos prontos para te ajudar com qualquer questão técnica ou comercial. Entre em contato com nossa equipe de suporte!</p>
+        <div class="text-center">
+            <!-- Ajuste para abrir o WhatsApp -->
+            <a href="https://wa.me/5549998043300?text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os!" class="btn btn-primary" target="_blank">
+                Fale com Suporte
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Entre em Contato</h2>
+        <form class="mt-4" action="enviar.php" method="POST"> <!-- Mudança aqui: ação do formulário -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2024 CloudVantage. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
